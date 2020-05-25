@@ -1,0 +1,150 @@
+/*
+--------------------------------------------------------------------------------
+HTML elements look n feel
+--------------------------------------------------------------------------------
+*/
+html {
+  /* base font-size is at reset.scss */
+  // font-size: 55%;
+  // @include retina(1.3) { font-size: 55%; }
+  // @include retina(1.5) { font-size: 60%; }
+  @include retina(2)   { font-size: 65%; }
+  background: rgba($silver, 10);
+  @include tablet {
+  background: rgba($silver, 10);
+  }
+}
+
+body {
+  color: $greenish-blue;
+  letter-spacing: -.001em;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+h1 {
+  font-size: 3.75rem;
+  letter-spacing: .02em;
+  line-height: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+
+h3 {
+  font-size: 2rem;
+  line-height: 42px;
+  font-weight: 700;
+  // margin-bottom: 15px;
+  // opacity: 0.7;
+  // text-align: left;
+  // @include desktop { text-align: right; margin-bottom: 0; }
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 26px;
+  font-weight: 700;
+
+}
+
+.subtitle-32 {
+  font-size: 2rem;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+.subtitle-18 {
+  font-size: 1.125rem;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.body-16 {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+span {
+  display: inline-block;
+}
+
+
+a {
+    //letter-spacing: 0.02em;
+    cursor: pointer;
+    text-decoration: none;
+    color: $pink;
+    // margin: 0 0.2rem;
+    padding: 0.2rem 0;
+    //border-bottom: solid rgba($pink, 0) 1px;
+    @include desktop {
+        // margin: 0rem 1.5rem;
+        // margin: 0 0.8rem;
+        border-bottom: solid 1px transparent;
+
+        &:hover {
+            text-decoration: none;
+            border-bottom: solid rgba($pink, 0.7) 1px;
+        }
+    }
+}
+
+
+//a {
+//  @include transition();
+//  cursor: pointer;
+//  text-decoration: none;
+//  color: $pink;
+//  &:hover { text-decoration: none; }
+//}
+
+b {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 800;
+}
+
+i {
+  font-style: italic;
+}
+
+// ::-moz-selection { background: rgba($black, 0.2); }
+// ::selection { background: rgba($black, 0.2); }
+
+.separator {
+  border: solid rgba($light, 0.6) 1px;
+  width: 50px;
+  @include desktop {
+    margin-left: 0.5rem;
+  }
+}

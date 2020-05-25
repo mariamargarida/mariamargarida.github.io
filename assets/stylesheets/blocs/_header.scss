@@ -1,0 +1,53 @@
+/*
+--------------------------------------------------------------------------------
+Header background images
+--------------------------------------------------------------------------------
+*/
+header {
+    z-index: 100;
+    width: 90%;
+
+    div {
+        width: 100%;
+        justify-content: space-between;
+        @include desktop {
+            justify-content: space-around;
+        }
+
+        a {
+            margin: 0 0.2rem;
+            @include desktop {
+              margin: 0 0.8rem;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+
+        div {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            @include desktop {
+                width: 80%;
+                justify-content: flex-end;
+            }
+
+            //a {
+            //    margin: 0;
+            //    @include desktop {
+            //        margin: 0 1%;
+            //    }
+
+            //    &:last-child {
+                    // width: 100%;
+                    // margin-top: 2rem;
+            //        @include tablet {
+            //            width: auto;
+            //            margin-top: 0;
+            //        }
+            //    }
+           //  }
+        }
+    }
+}

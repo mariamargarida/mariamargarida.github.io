@@ -1,0 +1,26 @@
+@import 'https://fonts.googleapis.com/css?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700';
+@import 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900';
+
+
+.numbers {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .18em;
+  opacity: 0.7;
+  width: 100%;
+  margin-right: 1.5rem;
+  @include desktop { width: auto; }
+
+  &+p {
+    width: 100%;
+    @include desktop { width: 68%; }
+  }
+}
+
+.Frank {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.DM {
+  font-family: 'DM Sans', sans-serif;
+}
