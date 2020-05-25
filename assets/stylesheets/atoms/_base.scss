@@ -13,6 +13,9 @@ html {
   @include tablet {
   background: rgba($silver, 10);
   }
+
+  // https://stackoverflow.com/questions/1417934/how-to-prevent-scrollbar-from-repositioning-web-page
+  overflow-y: scroll;
 }
 
 body {
